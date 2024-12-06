@@ -1,4 +1,5 @@
 import "../styles/style.css"
+import QuizCard from "./QuizCard";
 
 export default function Home() {
     const logo = document.querySelector('.page1 .logo');
@@ -34,8 +35,9 @@ export default function Home() {
                     <path d="M900 102C900 121.606 884.106 137.5 864.5 137.5C844.894 137.5 829 121.606 829 102C829 78.5 864.5 42.5 864.5 19C864.5 42.5 900 78.5 900 102Z" fill="#69BFE8"/>
                 </svg>
             </div>
+        
             <div class="perso">
-
+                
             </div>
         </div>
         <div class="page2"></div>
