@@ -26,8 +26,13 @@ export default function Home() {
         <>
         <main>
         <div class="page1">
-            <img class="background" src="src/assets/underwater-4286600_1280(1).jpg" alt=""/>
-            <img class="logo"  src="src/assets/logo-bb7df86791.png"/>
+            <div class="back-logo">
+                <img class="background" src="src/assets/underwater-4286600_1280(1).jpg" alt=""/>
+                <img class="logo"  src="src/assets/logo-bb7df86791.png"/>
+            </div>
+            <div class="perso">
+                
+            </div>
         </div>
         <div class="page2"></div>
         <div class="page3"></div>
@@ -37,6 +42,6 @@ export default function Home() {
             <p>Lancez l'IA</p>
         </div>
         </>
-        
+
     )
 }

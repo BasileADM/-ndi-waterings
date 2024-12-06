@@ -62,31 +62,35 @@ main {
 
 @layer page1 {
     .page1 {
-        height: 2400px;
+        height: 3000px;
         overflow: hidden;
+        position: relative;
     }
     
-    .page1 svg {
-        position: absolute;
-        z-index: 2;
-        top: 0;
-        left: 0;
-    }
-    
-    .page1 .background {
+    .page1 .back-logo .background {
         object-fit: cover;
         height: 100%;
         width: 100%;
         z-index: 0;
     }
 
-    .page1 .logo {
+    .page1 .back-logo .logo {
         width: calc(100% - 40px);
         max-width: 460px;
         position: absolute;
-        top: 50%;
+        top: 50vh;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translateX(-50%);
+    }
+
+    .page1 .perso {
+        background-color: red;
+        width: calc(100% - 40px);
+        height: 1400px;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 
