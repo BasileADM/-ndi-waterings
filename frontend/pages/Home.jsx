@@ -1,6 +1,7 @@
-import "../styles/style.css"
+import "../styles/style.css";
+import QuizCard from "./QuizCard";
 
-export default function Home() {
+function Home() {
     const logo = document.querySelector('.page1 .logo');
     const background = document.querySelector('.page1 .background');
 
@@ -29,9 +30,10 @@ export default function Home() {
             <img class="background" src="src/assets/underwater-4286600_1280(1).jpg" alt=""/>
             <img class="logo"  src="src/assets/logo-bb7df86791.png"/>
         </div>
-        <div class="page2"></div>
+        <div class="page2">      <QuizCard/></div>
         <div class="page3"></div>
         </main>
+  
         <div class="ia-button">
             <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="24" height="24"><path d="M24,12A12,12,0,1,1,12,0,12.013,12.013,0,0,1,24,12ZM14,12a2,2,0,0,0-2-2H10v2h2v7h2ZM12,5a1.5,1.5,0,1,0,1.5,1.5A1.5,1.5,0,0,0,12,5Z"/></svg>
             <p>Lancez l'IA</p>
@@ -40,3 +42,4 @@ export default function Home() {
         
     )
 }
+export default Home
