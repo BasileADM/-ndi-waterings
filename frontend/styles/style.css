@@ -1,0 +1,96 @@
+html {
+    background-color: var(--body-background);
+    font-family: "Montserrat";
+    font-weight: 500;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+}
+
+main {
+    overflow-x: hidden;
+}
+
+@layer var {
+    :root {
+        --body-background: rgb(175, 175, 175);
+        --ai-button-color: rgba(255, 255, 255, 0.8);
+        --ai-background-color: rgba(122, 122, 122, 0.5);
+    }
+}
+
+@layer ia-button {
+    .ia-button {
+        background-color: var(--ai-background-color);
+        backdrop-filter: blur(12px);
+        height: 40px;
+        width: 40px;
+        border-radius: 1000px;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        cursor: pointer;
+        transition: all 0.4s cubic-bezier(.31,.15,.03,1);
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        overflow: hidden;
+    }
+    .ia-button:hover {
+        width: 142px;
+    }
+    
+    .ia-button svg {
+        position: absolute;
+        right: 8px;
+        fill: var(--ai-button-color);
+    }
+    
+    .ia-button p {
+        color: var(--ai-button-color);
+        font-weight: 600;
+        font-size: 16px;
+        position: absolute;
+        width: max-content;
+        right: 40px;
+    }
+}
+
+@layer page1 {
+    .page1 {
+        height: 2400px;
+        overflow: hidden;
+    }
+    
+    .page1 svg {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+    }
+    
+    .page1 .background {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+    }
+
+    .page1 .logo {
+        width: calc(100% - 40px);
+        max-width: 460px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.page2 {
+    height: 6000px;
+    background-color: white;
+}
