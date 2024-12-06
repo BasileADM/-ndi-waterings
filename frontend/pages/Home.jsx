@@ -1,4 +1,5 @@
 import "../styles/style.css"
+import QuizCard from "./QuizCard";
 
 export default function Home() {
     const logo = document.querySelector('.page1 .logo');
@@ -30,8 +31,9 @@ export default function Home() {
                 <img class="background" src="src/assets/underwater-4286600_1280(1).jpg" alt=""/>
                 <img class="logo"  src="src/assets/logo-bb7df86791.png"/>
             </div>
+        
             <div class="perso">
-                
+                    <QuizCard/>
             </div>
         </div>
         <div class="page2"></div>
